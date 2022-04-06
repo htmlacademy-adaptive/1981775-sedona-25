@@ -43,12 +43,12 @@
     <h1 class="visually-hidden">Основной банер </h1>
     <section class="main__container baner">
       <div class="baner__wrapper">
-        <img class="baner__logo-image" src="img/catalog/text-index.svg" width="282" height="214" alt="Логотип седона">
+        <img class="baner__logo-image" src="img/catalog/SEDONA-form.svg" width="229" height="36" alt="Логотип седона">
       </div>
     </section>
     <section class="review">
       <div class="review__wrapper">
-        <h1 class="review__title">оставте отзыв</h1>
+        <h2 class="review__title">оставте отзыв</h2>
         <p class="review__text">помогите нашим отелям стать лучше! оставте отзыв о них,а также о посещенных вами
           достопремечательностях</p>
       </div>
@@ -56,72 +56,62 @@
     <section class="main__container form">
       <div class="form__wrapper">
         <header class="visually-hidden">Раздел формы</header>
+        <form action="https://echo.htmlacademy.ru/courses" method="get">
         <ul class="form__list">
           <li class="form__list-item">
-            <h1 class="form__list-title">Представтесь:</h1>
-            <form action="/action_page.php">
-              Имя*</sup>:<br>
-              <input type="text" name="Петр" value="Петр">
-              <br>
-              Фамилия*:<br>
-              <input type="text" name="Пустота" value="Пустота">
-              <br>
-              Отчество*:<br>
-              <input type="text" name="Викторович" value="Викторович">
-              <br>
-            </form>
+            <fieldset class="form__list-item-form">
+             <legend class="form__list-item-title">Представтесь:</legend>
+            <label for="name">имя*:</label>
+            <input type="text" name="total" id="name" value="Петр">
+            <label for="surname">Фамилия*:</label>
+             <input type="text" name="total" id="surname" value="Пустота">
+             <label for="patronymic">Отчество*:</label>
+             <input type="text" name="total" id="patronymic" value="Викторович">
+            </fieldset>
           </li>
           <li class="form__list-item">
-            <h1 class="form__list-title">Контактная информация:</h1>
-            <form action="https://echo.htmlacademy.ru/courses" method="post">
-              Контактный телефон*:<br>
-              <input type="text" name="firstname" value="Введите телефон"><img class="form__list-image"
-                src="img/catalog/phone.svg" width="18" height="18" alt="Логотип седона"><br>
-              Электронная почта*:<br>
-              <input type="text" name="lastname" value="Введите e-mail"><img class="form__list-image"
-                src="img/catalog/mail.svg" width="18" height="18" alt="Логотип седона">
+            <fieldset class="form__list-item-form">
+              <legend class="form__list-item-title">Контактная информация:</legend>
+              <label for="phone">Контактный телефон*:</label>
+              <input type="text" name="total" id="phone" value="Введите телефон">
+              <label for="mail">Электронная почта*:</label>
+               <input type="text" name="total" id="mail" value="Введите e-mail">
+            </fieldset>
           </li>
           <li class="form__list-item">
-            <h1 class="form__list-title">Ваше общее впечатление:</h1>
-            <form action="https://echo.htmlacademy.ru/courses" method="post">
-              <fieldset>
-                <input type="radio" id="Скорее положительное" name="Ваше общее впечатление">
-                <label for="Скорее положительное">Скорее положительное</label><br />
-
-                <input type="radio" id="Скорее отрицательное" name="Ваше общее впечатление">
-                <label for="Скорее отрицательное">Скорее отрицательное</label><br />
-
-                <input type="radio" id="Затрудняюсь ответить" name="Ваше общее впечатление">
-                <label for="Затрудняюсь ответить">Затрудняюсь ответить</label>
+            <fieldset class="form__list-item-form">
+                <legend class="form__list-item-title">Ваше общее впечатление:</legend>
+                <input type="radio" name="total" id="positive" >
+                <label for="positive">Скорее положительное</label>
+                <input type="radio" name="total" id="negative" >
+                <label for="negative">Скорее отрицательное</label>
+                <input type="radio" name="total" id="difficult" >
+                <label for="difficult">Скорее отрицательное</label>
               </fieldset>
           </li>
           <li class="form__list-item">
-            <h1 class="form__list-title">Посещенные достопримечательности:</h1>
-            <form action="https://echo.htmlacademy.ru/courses" method="post">
-              <input type="checkbox" name="subscribe" id="subscribe-field" checked>
-              <label for="subscribe-field">Мост-Дьявола</label>
-              <input type="checkbox" name="subscribe" id="subscribe-field" checked>
-              <label for="subscribe-field">Гора-Колокол</label>
-              <input type="checkbox" name="subscribe" id="subscribe-field" checked>
-              <label for="subscribe-field">Слайд-Парк</label>
-              <input type="checkbox" name="subscribe" id="subscribe-field">
-              <label for="subscribe-field">Красные скалы</label>
+            <fieldset class="form__list-item-form">
+              <legend class="form__list-item-title">Посещенные достапримечательности:</legend>
+              <input type="checkbox" name="total" id="bridge" >
+              <label for="bridge">Мост Дьявола</label>
+              <input type="checkbox" name="total" id="mountain" >
+              <label for="mountain">Гора-Колокол</label>
+              <input type="checkbox" name="total" id="park" >
+              <label for="park">Слайд-Парк</label>
+              <input type="checkbox" name="total" id="red" >
+              <label for="red">Красные скалы</label>
+            </fieldset>
           </li>
           <li class="form__list-item">
-            <h1 class="form__list-title">Опишите свои эмоции:</h1>
-            <form action="https://echo.htmlacademy.ru/courses" method="post">
-              <textarea name="comment" id="comment-field" rows="10">Текст комментария</textarea>
-
-              <input type="submit" value="Отправить">
+            <fieldset class="form__list-item-form">
+              <legend class="form__list-item-title">Опишите свои имоции:</legend>
+              <textarea name="comment" id="comment-field" rows="10">Опишите подробно все свои восторги</textarea>
+            </fieldset>
+            <input type="submit" value="Отправить отзыв">
               <p>*-обязательное поле </p>
           </li>
-        </ul>
-      </div>
-    </section>
-    <section class="main-emotion">
-      <div class="main-emotion__wrapper">
-        <h1 class="main-emotion__title">Опешите ваши эмоции:</h1>
-
+          </ul>
+          </form>
       </div>
     </section>
     <footer class="main-footer">
