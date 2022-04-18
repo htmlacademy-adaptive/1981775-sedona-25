@@ -2,37 +2,37 @@
 <html class="page" lang="ru">
 
 <head>
-  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/style.css" />
   <meta charset="UTF-8">
   <title>Седона»</title>
 </head>
 
-<body class="page__body">
+<body class="page-body">
   <header class="main-header">
-    <a class="main-header__logo-link"><img class="main-header__logo-image" src="img/logo-sedona.svg" width="185" height="96"
-        alt="Логотип седона">
+    <a class="main-header__logo-link "><img class="main-header__logo-image" src="img/logo-sedona.svg" width="185"
+        height="96" alt="Логотип седона">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="site-list__item site-list__item--active">
-            <a>
+            <a class="site-list__text">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">
+            <a class="site-list__text">
               Фото видео
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a class="site-list__text">
               Форма отзыва
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a class="site-list__text" href="#">
               HTML Academy
             </a>
           </li>
@@ -50,68 +50,75 @@
     <section class="preview">
       <div class="preview__wrapper">
         <h1 class="preview__title secondary-text">СЕДОНА-НЕБОЛЬШОЙ ГОРОДОКВ АРИЗОНЕ,ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО</h1>
-        <p class="preview__text tertiary__text">расмотрим 5 причин,по которым седона круче,чем гранд каньон</p>
+        <p class="preview__text tertiary-text">расмотрим 5 причин,по которым седона круче,чем гранд каньон</p>
       </div>
     </section>
     <section class="benefits">
       <div class="benefits__wrapper">
         <header class="visually-hidden">Раздел с преимуществами</header>
-        <ul class="benefits__list">
-          <li class="benefits__item-color benefits__item">
-            <h1 class="benefits__title secondary__text">настоящий город</h1>
-            <p class="benefits__number tertiary__text">-№1-</p>
-            <p class="benefits__text tertiary__text">Седона не атракцион для туристов,там течет своя жизнь</p>
-          </li>
-          <li class="benefits__item">
-            <img class="benefits__foto" src="img/photo-city@1x 1.jpg" width="520" height="260"
+        <div class="benefits__list">
+          <article class="benefits__item real__city">
+            <h1 class="real__city-title secondary-text">настоящий город</h1>
+            <p class="real__city-number tertiary-text">-№1-</p>
+            <p class="real__city-text tertiary-text">Седона не атракцион для туристов,там течет своя жизнь</p>
+          </article>
+          <article class="benefits__item city">
+            <img class="city__foto" src="img/photo-city@1x 1.jpg" width="520" height="260"
               alt="Фото фасада здания в Седоне">
-          </li>
-          <li class="benefits__item">
-            <h1 class="benefits__title secondary__text">Жилье</h1>
-            <img class="benefits__logo" src="img/house.svg" width="39" height="37" alt="логотип домика">
-            <p class="benefits__text tertiary__text">Рекомендуем пожить в настоящем мотеле,всё как в кино!</p>
-          </li>
-          <li class="benefits__item">
-            <h1 class="benefits__title secondary__text">еда</h1>
-            <img class="benefits__logo" src="img/icon-burger.svg" width="39" height="37" alt="логотип домика">
-            <p class="benefits__text tertiary__text">Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
-          </li>
-          <li class="benefits__item">
-            <h1 class="benefits__title secondary__text">Сувиниры</h1>
-            <img class="benefits__logo" src="img/present.svg" width="39" height="37" alt="логотип домика">
-            <p class="benefits__text tertiary__text">не только китайского ,но и местного производства!</p>
-          </li>
-          <li class="benefits__item-color benefits__item">
-            <h1 class="benefits__title secondary__text">Там есть мост дьявола</h1>
-            <p class="benefits__number tertiary__text">-№2-</p>
-            <p class="benefits__text tertiary__text">да,по нему можно пройти!Если вы осмелитесь,конечно</p>
-          </li>
-          <li class="benefits__item">
-            <img class="benefits__foto" src="img/photo-bridge@1x 1.jpg" width="520" height="260"
-              alt="Фото фасада здания в Седоне">
-          </li>
-          <li class="benefits__item">
-            <h1 class="benefits__title secondary__text">Небольшая площадь</h1>
-            <p class="benefits__number tertiary__text">-№3-</p>
-            <p class="benefits__text tertiary__text">Все интересные места находяться очень близко</p>
-          </li>
-          <li class="benefits__item">
-            <h1 class="benefits__title secondary__text">Красивая дорога</h1>
-            <p class="benefits__number tertiary__text">-№4-</p>
-            <p class="benefits__text tertiary__text">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
-          </li>
-          <li class="benefits__item">
-            <h1 class="benefits__title secondary__text">Мало туристов</h1>
-            <p class="benefits__number tertiary__text">-№5-</p>
-            <p class="benefits__text tertiary__text">Большенство едет в Гранд каньен и толпиться там</p>
-          </li>
-        </ul>
-      </div>
+          </article>
+          <ul class="benefits__item housing-food-souvenir">
+            <li class="housing-food-souvenir__item">
+              <h1 class="housing-food-souvenir__title secondary-text">Жилье</h1>
+              <img class="housing-food-souvenir__logo" src="img/house.svg" width="39" height="37" alt="логотип домика">
+              <p class="housing-food-souvenir__text tertiary-text">Рекомендуем пожить в настоящем мотеле,всё как в кино!
+              </p>
+            </li>
+            <li class="housing-food-souvenir__item">
+              <h1 class="housing-food-souvenir__title secondary-text">еда</h1>
+              <img class="housing-food-souvenir__logo" src="img/icon-burger.svg" width="39" height="37"
+                alt="логотип домика">
+              <p class="housing-food-souvenir__text tertiary-text">Всегда заказывайте фирменный бургер,вы не
+                разочаруетесь!</p>
+            </li>
+            <li class="housing-food-souvenir__item">
+              <h1 class="housing-food-souvenir__title secondary-text">Сувиниры</h1>
+              <img class="housing-food-souvenir__logo" src="img/present.svg" width="39" height="37"
+                alt="логотип домика">
+              <p class="housing-food-souvenir__text tertiary-text">не только китайского ,но и местного производства!</p>
+            </li>
+          </ul>
+          <article class="benefits__item devil">
+            <h1 class="devil__title secondary-text">Там есть мост дьявола</h1>
+            <p class="devil__number tertiary-text">-№2-</p>
+            <p class="devil__text tertiary-text">да,по нему можно пройти!Если вы осмелитесь,конечно</p>
+          </article>
+          <article class="benefits__item devil-bridge">
+            <img class="devil-bridge__foto" src="img/photo-bridge@1x 1.jpg" width="520" height="260" alt="Мост дьявола">
+          </article>
+          <ul class="benefits__item second-list">
+            <li class="second-list__item"></li>
+            <h1 class="second-list__title secondary-text">Небольшая площадь</h1>
+            <p class="second-list__number tertiary-text">-№3-</p>
+            <p class="second-list__text tertiary-text">Все интересные места находяться очень близко</p>
+            </li>
+            <li class="second-list__item">
+              <h1 class="second-list__title secondary-text">Красивая дорога</h1>
+              <p class="second-lists__number tertiary-text">-№4-</p>
+              <p class="benefits__text tertiary-text">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
+            </li>
+            <li class="second-list__item">
+              <h1 class="second-list__title secondary-text">Мало туристов</h1>
+              <p class="second-list__number tertiary-text">-№5-</p>
+              <p class="second-list__text tertiary-text">Большенство едет в Гранд каньен и толпиться там</p>
+            </li>
+          </ul>
+        </div>
     </section>
     <section class="interested">
       <div class="interested__wrapper">
-        <h2 class="interested__title secondary__text">заинтересовались?</h2>
-        <p class="interested__text tertiary__text">Укажите предпологаемые даты поездки,и мы покажем вам лучшее предложение гостиниц в Седоне
+        <h2 class="interested__title secondary-text">заинтересовались?</h2>
+        <p class="interested__text tertiary-text">Укажите предпологаемые даты поездки,и мы покажем вам лучшее
+          предложение гостиниц в Седоне
         </p>
         <button class="interested__button" type="button">Найти гостиницу</button>
       </div>
@@ -119,33 +126,33 @@
     <section class="map">
       <div class="map__wrapper">
         <h2 class="visually-hidden">Карта</h2>
-        <div id="map" style="width:100%;height:400px;"><img class="map-image" src="img/map-mobile.jpg" width="768" height="350" alt="карта фото"></div>
+        <div id="map" style="width:100%;height:400px;"><img class="map-image" src="img/map-mobile.jpg" width="768"
+            height="350" alt="карта фото"></div>
       </div>
     </section>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-          <b class="main-footer__title">#VISITSEDONA</b>
-        </div>
-        <div class="main-footer__social social">
-          <b class="social__title">Давайте дружить!</b>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
-                Ютубе</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
-            </li>
-          </ul>
-        </div>
-        <div class="main-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__link-logo" src="img/htmlacademy-logo.svg" width="27" height="34"
-            alt="Логотип htmlacademy"></a>
-        </div>
+        <b class="main-footer__title">#VISITSEDONA</b>
+      </div>
+      <div class="main-footer__social social">
+        <b class="social__title">Давайте дружить!</b>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><img class="vk" src="/source/img/vk.svg" width="48" height="48" alt="vk"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><img class="youtube" src="/source/img/youtube.svg" width="48" height="48" alt="youtube"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"><img class="telegram" src="/source/img/telegram.svg" width="48" height="48" alt="telegram"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__link-logo"
+            src="img/htmlacademy-logo.svg" width="27" height="34" alt="Логотип htmlacademy"></a>
+      </div>
       </div>
     </footer>
   </main>
