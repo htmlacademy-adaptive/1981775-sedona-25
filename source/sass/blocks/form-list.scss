@@ -1,11 +1,12 @@
 .form__list {
   list-style-type: none;
+  padding-left: 0;
+  display: flex;
 }
 
 .form__list .form__list-item:nth-child(1) {
   width: 280px;
   height: 269px;
-  display: flex;
 }
 
 .form__list .form__list-item:nth-child(2) {
@@ -17,17 +18,14 @@
 .form__list .form__list-item:nth-child(3) {
   width: 280px;
   height: 170px;
-  display: flex;
 }
 
 .form__list .form__list-item:nth-child(4) {
   width: 280px;
   height: 232px;
-  display: flex;
 }
 
 .form__list .form__list-item:nth-child(5) {
-  width: 247px;
+  width: 500px;
   height: 118px;
-  display: flex;
 }
