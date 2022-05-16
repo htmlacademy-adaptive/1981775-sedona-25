@@ -1,0 +1,9 @@
+.form__list-item-form-radio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.form__list-item-form-radio:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,12 @@
+.form__list-item-form-checkbox-input {
+  opacity: 0;
+  z-index: -1;
+}
+
+.form__list-item-form-checkbox-input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  background: url("/img/tick.svg");
+  background-size: 22px 16px;
+}
