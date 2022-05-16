@@ -1,0 +1,9 @@
+.form__list-item-form-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.form__list-item-form-item:last-child {
+  margin-bottom: 0;
+}

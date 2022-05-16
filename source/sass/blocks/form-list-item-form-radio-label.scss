@@ -1,0 +1,14 @@
+.form__list-item-form-radio-label {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+}
+
+.form__list-item-form-radio-label::before {
+  content: "";
+  background-color: #f2f2f2;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  margin-right: 16px;
+}

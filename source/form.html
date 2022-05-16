@@ -2,16 +2,19 @@
 <html class="page" lang="ru">
 
 <head>
+  <link rel="stylesheet" href="css/style.css" />
   <meta charset="UTF-8">
   <title>Седона»</title>
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo"><img class="main-header__logo-image" src="img/catalog/logo-sedona.svg" width="185"
+    <div class="container">
+      <a class="main-header__logo"><img class="main-header__logo-image" src="img/catalog/logo-sedona.svg" width="185"
         height="96" alt="Логотип седона">
     </a>
-    <nav class="main-nav">
+    </div>
+    <!--<nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
@@ -37,13 +40,13 @@
           </li>
         </ul>
       </div>
-    </nav>
+    </nav>-->
   </header>
   <main class="main-container">
     <h1 class="visually-hidden">Основной банер </h1>
     <section class="main__container baner">
       <div class="baner__wrapper">
-        <img class="baner__logo-image" src="img/catalog/SEDONA-form.svg" width="229" height="36" alt="Логотип седона">
+        <img class="baner__logo-image" src="img/catalog/text-index.svg" width="282" height="214" alt="Логотип седона">
       </div>
     </section>
     <section class="review">
@@ -57,80 +60,130 @@
       <div class="form__wrapper">
         <header class="visually-hidden">Раздел формы</header>
         <form action="https://echo.htmlacademy.ru/courses" method="get">
-        <ul class="form__list">
-          <li class="form__list-item">
-            <fieldset class="form__list-item-form">
-             <legend class="form__list-item-title">Представтесь:</legend>
-            <label for="name">имя*:</label>
-            <input type="text" name="total" id="name" value="Петр">
-            <label for="surname">Фамилия*:</label>
-             <input type="text" name="total" id="surname" value="Пустота">
-             <label for="patronymic">Отчество*:</label>
-             <input type="text" name="total" id="patronymic" value="Викторович">
-            </fieldset>
-          </li>
-          <li class="form__list-item">
-            <fieldset class="form__list-item-form">
-              <legend class="form__list-item-title">Контактная информация:</legend>
-              <label for="phone">Контактный телефон*:</label>
-              <input type="text" name="total" id="phone" value="Введите телефон">
-              <label for="mail">Электронная почта*:</label>
-               <input type="text" name="total" id="mail" value="Введите e-mail">
-            </fieldset>
-          </li>
-          <li class="form__list-item">
-            <fieldset class="form__list-item-form">
-                <legend class="form__list-item-title">Ваше общее впечатление:</legend>
-                <input type="radio" name="total" id="positive" >
-                <label for="positive">Скорее положительное</label>
-                <input type="radio" name="total" id="negative" >
-                <label for="negative">Скорее отрицательное</label>
-                <input type="radio" name="total" id="difficult" >
-                <label for="difficult">Скорее отрицательное</label>
-              </fieldset>
-          </li>
-          <li class="form__list-item">
-            <fieldset class="form__list-item-form">
-              <legend class="form__list-item-title">Посещенные достапримечательности:</legend>
-              <input type="checkbox" name="total" id="bridge" >
-              <label for="bridge">Мост Дьявола</label>
-              <input type="checkbox" name="total" id="mountain" >
-              <label for="mountain">Гора-Колокол</label>
-              <input type="checkbox" name="total" id="park" >
-              <label for="park">Слайд-Парк</label>
-              <input type="checkbox" name="total" id="red" >
-              <label for="red">Красные скалы</label>
-            </fieldset>
-          </li>
-          <li class="form__list-item">
-            <fieldset class="form__list-item-form">
-              <legend class="form__list-item-title">Опишите свои имоции:</legend>
-              <textarea name="comment" id="comment-field" rows="10">Опишите подробно все свои восторги</textarea>
-            </fieldset>
-            <input type="submit" value="Отправить отзыв">
-              <p>*-обязательное поле </p>
-          </li>
+          <ul class="form__list">
+            <li class="form__list-item">
+              <div class="container">
+                <fieldset class="form__list-item-form">
+                  <legend class="form__list-item-title">Представтесь:</legend>
+                  <div class="form__list-item-form-name"><label class="form__list-item-form-name-title"
+                      for="name">имя*:</label>
+                    <input class="form__list-item-form-name-discription" type="text" name="total" id="name"
+                      value="Петр">
+                  </div>
+                  <div class="form__list-item-form-name"><label class="form__list-item-form-name-title"
+                      for="surname">Фамилия*:</label>
+                    <input class="form__list-item-form-name-discription" type="text" name="total" id="surname"
+                      value="Пустота">
+                  </div>
+                  <div class="form__list-item-form-name"><label class="form__list-item-form-name-title"
+                      for="patronymic">Отчество*:</label>
+                    <input class="form__list-item-form-name-discription" type="text" name="total" id="patronymic"
+                      value="Викторович">
+                  </div>
+                </fieldset>
+              </div>
+            </li>
+            <li class="form__list-item">
+              <div class="container">
+                <fieldset class="form__list-item-form">
+                  <legend class="form__list-item-title">Контактная информация:</legend>
+                  <div class="form__list-item-form-item">
+                    <label class="form__list-item-title-text form__list-item-form-name-title" for="phone">Контактный
+                      телефон*:</label>
+                    <div class="form__list-item-form-item-contacts">
+                      <input class="form__list-item-title-item" type="text" name="total" id="phone"
+                        value="Введите телефон">
+                      <img class="form__list-item-title-imag" src="img/phone.svg" width="18" height="18" alt="телефон">
+                    </div>
+                  </div>
+                  <div class="form__list-item-form-item">
+                    <label class="form__list-item-title-text form__list-item-form-name-title" for="mail">Электронная
+                      почта*:</label>
+                    <div class="form__list-item-form-item-contacts">
+                      <input class="form__list-item-title-item" type="text" name="total" id="mail"
+                        value="Введите e-mail">
+                      <img class="form__list-item-title-imag" src="img/mail.svg" width="18" height="18" alt="почта">
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </li>
+            <li class="form__list-item">
+              <div class="container">
+                <fieldset class="form__list-item-form">
+                  <legend class="form__list-item-title">Ваше общее впечатление:</legend>
+                  <div class="form__list-item-form-radio"><input class="form__list-item-form-radio-imput" type="radio"
+                      name="total" id="positive">
+                    <label class="form__list-item-form-radio-label thick" for="positive" checked>Скорее
+                      положительное</label>
+                  </div>
+                  <div class="form__list-item-form-radio"><input class="form__list-item-form-radio-imput" type="radio"
+                      name="total" id="negative">
+                    <label class="form__list-item-form-radio-label thick" for="negative">Скорее отрицательное</label>
+                  </div>
+                  <div class="form__list-item-form-radio"><input class="form__list-item-form-radio-imput" type="radio"
+                      name="total" id="difficult">
+                    <label class="form__list-item-form-radio-label thick" for="difficult">Скорее отрицательное</label>
+                  </div>
+                </fieldset>
+              </div>
+            </li>
+            <li class="form__list-item">
+              <div class="container">
+                <fieldset class="form__list-item-form">
+                  <legend class="form__list-item-title">Посещенные достапримечательности:</legend>
+                  <div class="form__list-item-form-checkbox"><input class="form__list-item-form-checkbox-input"
+                      type="checkbox" name="total" id="bridge" checked>
+                    <label class="form__list-item-form-checkbox-label thick" for="bridge">Мост Дьявола</label>
+                  </div>
+                  <div class="form__list-item-form-checkbox"><input class="form__list-item-form-checkbox-input"
+                      type="checkbox" name="total" id="mountain">
+                    <label class="form__list-item-form-checkbox-label thick" for="mountain">Гора-Колокол</label>
+                  </div>
+                  <div class="form__list-item-form-checkbox"><input class="form__list-item-form-checkbox-input"
+                      type="checkbox" name="total" id="park">
+                    <label class="form__list-item-form-checkbox-label thick" for="park">Слайд-Парк</label>
+                  </div>
+                  <div class="form__list-item-form-checkbox"><input class="form__list-item-form-checkbox-input"
+                      type="checkbox" name="total" id="red">
+                    <label class="form__list-item-form-checkbox-label thick" for="red">Красные скалы</label>
+                  </div>
+                </fieldset>
+              </div>
+            </li>
+            <li class="form__list-item">
+              <div class="container">
+                <fieldset class="form__list-item-form">
+                  <legend class="form__list-item-title">Опишите свои имоции:</legend>
+                  <textarea name="comment" id="comment-field" rows="10">Опишите подробно все свои восторги</textarea>
+                </fieldset>
+                <input type="submit" value="Отправить отзыв">
+                <p>*-обязательное поле </p>
+              </div>
+            </li>
           </ul>
-          </form>
+        </form>
       </div>
     </section>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <div class="main-footer__contacts">
+        <div class="main-footer__text">
           <b class="contacts__title">#VISITSEDONA</b>
         </div>
         <div class="main-footer__social social">
           <b class="social__title">Давайте дружить!</b>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><img class="vk"
+                  src="/source/img/vk.svg" width="48" height="48" alt="vk"></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
-                Ютубе</a>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><img
+                  class="youtube" src="/source/img/youtube.svg" width="48" height="48" alt="youtube"></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"><img class="telegram"
+                  src="/source/img/telegram.svg" width="48" height="48" alt="telegram"></a>
             </li>
           </ul>
         </div>
